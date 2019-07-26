@@ -1,0 +1,21 @@
+<h1 class = "text-center">Hello.</h1>
+
+<h3 class = "text-center">
+<%= link_to 'Create a new foo', new_foo_path %>
+</h3>
+
+<br />
+<br />
+<br />
+
+<div class="booyah-box col-10 offset-1">
+  <% if @foos.present? %>
+    <% @foos.each do |foo| %>
+        <b> <%= foo.title %> </b>
+        <br />
+        <p> <%= foo.description %> </p>
+    <% end %>
+  <% end %>
+</div>
+
+

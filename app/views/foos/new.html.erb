@@ -1,0 +1,9 @@
+<div class="booyah-box col-10 offset-1">
+  <h1>Add a title and description, they can be anything really.</h1>
+    <%= simple_form_for @foo, url: foos_path do |f| %>
+      <%= f.input :title %>
+      <%= f.input :description %>
+
+      <%= f.submit "Create", class: 'btn btn-primary' %>
+    <% end %>
+</div>
